@@ -1,8 +1,21 @@
+:root {
+    --brand-gray: #6b6c71;
+    --brand-brown: #a1694c;
+    --brand-white: #F0F0F0;
+    --brand-soft-black: #3a3e49;
+    --brand-yellow: #d59b40;
+
+
+      font-size: 62.5%;
+
+}
+
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f5f7fa;
+    color: var (--brand-soft-black);
+    background-color: var (--brand-gray);
     margin: 0;
     padding: 20px;
 }
@@ -10,20 +23,20 @@ body {
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: var (--brand-white);
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px var (--brand-soft-black);
 }
 
 h1, h3 {
-    color: #2c3e50;
+    color: var (--brand-yellow);
     margin-bottom: 20px;
 }
 
 h1 {
     text-align: center;
-    border-bottom: 2px solid #3498db;
+    border-bottom: 2px solid var (--brand-gray);
     padding-bottom: 10px;
 }
 
@@ -37,7 +50,7 @@ label {
     display: inline-block;
     width: 250px;
     font-weight: 500;
-    color: #34495e;
+    color: var (--brand-yellow);
 }
 
 input, select {
@@ -50,14 +63,14 @@ input, select {
 }
 
 input:focus, select:focus {
-    border-color: #3498db;
+    border-color: var (--brand-gray);
     outline: none;
-    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    box-shadow: 0 0 5px var (--brand-yellow);
 }
 
 button {
-    background-color: #3498db;
-    color: white;
+    background-color: var (--brand-gray);
+    color: var(--brand-soft-black);
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
@@ -69,15 +82,16 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: var(--brand-brown);
+    color: var(--brand-white);
 }
 
 .summary {
-    background-color: #eaf2f8;
+    background-color: var(--brand-white);
     padding: 20px;
     border-radius: 5px;
     margin: 20px 0;
-    border-left: 5px solid #3498db;
+    border-left: 5px solid var (--brand-gray);
 }
 
 .chart-container {
@@ -90,27 +104,27 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px --brand-soft-black;
 }
 
 th, td {
     padding: 12px 15px;
     text-align: right;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid --brand-white;
 }
 
 th {
-    background-color: #3498db;
-    color: white;
+    background-color: var (--brand-gray);
+    color: var(--brand-white);
     text-align: center;
 }
 
 tr:nth-child(even) {
-    background-color: #f8f9fa;
+    background-color: var(--brand-white);
 }
 
 tr:hover {
-    background-color: #f1f9ff;
+    background-color: var(--brand-white);
 }
 
 #summary, #resultsTable {
